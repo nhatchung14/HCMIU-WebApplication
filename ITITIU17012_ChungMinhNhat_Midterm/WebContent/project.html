@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> Project </title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+	<body>
+		<header>
+		    <div class="container">
+		      <a href="index.html"><img class="logo" src="image/logo.png"/></a>
+		      <nav>
+		        <ul>
+		          <li><a href="index.html">Home</a></li>
+		          <li><a href="about.html">About</a></li>
+		          <li><a href="project.html">Projects</a></li>
+		          <li><a href="resume.html">Resume</a></li>
+              	  <li><a href="contact.html">Contact</a></li>
+              	  <li><a href="LoginPage.jsp">Login</a></li>
+		        </ul>
+		      </nav>
+		    </div>
+		</header>
+
+    <main>
+        <div class="body">
+          <br>
+          <div class="project-search-bar">
+            <form method="get" action="/project-search">
+              <label for="category">Project </label>
+              <input type="text" id="category" name="categoryname" placeholder="What is it?">
+              <input type="submit" value="Search">
+            </form>
+            <hr>
+          </div>
+
+          <div class="project-body">
+
+            <div class="project">
+            <h1> Neural Decision Tree </h1>
+            <p> This project employs the work of the Turing Award winner Geoffrey Hinton <a href="https://arxiv.org/abs/1711.09784"> Neural Decision Tree</a> to detect objects in real-time. </p>    
+            <div class="project-wrapper">
+            <div class="project-object">
+              <div class="project-object-description">
+              </div>
+              <a href="construction.html">
+                <img class="project-object-image" src="image/NDT.png" alt="Project 1">
+              </a>
+            </div>
+            </div>
+            <hr>
+            </div>
+
+            <div class="project">
+            <h1> Gaussian Mixture Model </h1>
+            <p> This project employs the <a href="https://www.researchgate.net/publication/215722011_Adaptive_background_mixture_models_for_real-time_tracking"> Gaussian Mixture Model </a> to extract moving objects independent of scenerios and weather conditions. </p>    
+            <div class="project-wrapper">
+            <div class="project-object">
+              <div class="project-object-description">
+              </div>
+              <a href="construction.html">
+                <img class="project-object-image" src="image/GMM.png" alt="Project 2">
+              </a>      
+            </div>
+            </div>
+            <hr>
+            </div>
+
+          </div>
+        </div>
+    </main>
+  </body>
+</html>

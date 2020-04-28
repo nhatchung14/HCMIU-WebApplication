@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Contact </title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+	<body>
+		<header>
+		    <div class="container">
+		      <a href="index.html"><img class="logo" src="image/logo.png"/></a>
+		      <nav>
+		        <ul>
+		          <li><a href="index.html">Home</a></li>
+		          <li><a href="about.html">About</a></li>
+		          <li><a href="project.html">Projects</a></li>
+		          <li><a href="resume.html">Resume</a></li>
+              	  <li><a href="contact.html">Contact</a></li>
+              	  <li><a href="LoginPage.jsp">Login</a></li>
+		        </ul>
+		      </nav>
+		    </div>
+		</header>
+    <main>
+        <div class="body">
+            <div class="contact-intro">
+              <img id="contact-intro-image" src="https://www.1designshop.com/wp-content/uploads/2016/01/1dsp-20160104-business-001.png" alt="image credit to designshop"/>
+            </div>
+            <div class="contact-body">
+              <div class="contact-body-content">
+              <h1> CONTACT NHAT </h1>
+              <hr>
+              <form class="contact-form" method="post" action="/message">
+                <table>
+                <!-- Row -->
+                <tr>
+                  <!-- Header Data -->
+                  <td>Name </td>
+                  <!-- Header Data -->
+                  <td> <input type="text" id="messager" name="messagername" placeholder="Your name?" size="23"> </td>
+                </tr>
+                <!-- Row -->
+                <tr>
+                  <!-- Data -->
+                  <td>Email </td>
+                  <!-- Data -->
+                  <td> <input type="text" id="messagermail" name="messageremail" placeholder="What is your email?" size="23"> </td>
+                </tr>
+                <tr>
+                  <!-- Data -->
+                  <td> This is a </td>
+                  <!-- Data -->
+                  <td>  
+                      <select name="messagetype">
+                        <option value="offer">job offer</option>
+                        <option value="message">message</option>
+                      </select>
+                  </td>
+                </tr>
+                <tr>
+                  <!-- Data -->
+                  <td>Message </td>
+                  <!-- Data -->
+                  <td> <textarea  name="textarea" placeholder="Send me a message!" rows="10" cols="25"></textarea> </td>
+                </tr>
+                <tr>
+                  <!-- Data -->
+                  <td colspan="2">  
+                      <input type="submit"  name="submit"   value= "Send">
+                  </td>
+                </tr>
+                </table>
+              </form>
+            </div>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>
